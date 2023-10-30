@@ -1,0 +1,13 @@
+apiVersion: cdi.kubevirt.io/v1beta1
+kind: DataSource
+metadata:
+  labels:
+    app.kubernetes.io/component: storage
+    app.kubernetes.io/managed-by: cdi-controller
+    app.kubernetes.io/part-of: hyperconverged-cluster
+    app.kubernetes.io/version: 4.13.4
+    cdi.kubevirt.io/dataImportCron: ubuntu-import-cron
+  name: ubuntu-22.04
+  namespace: kubevirt-os-images
+spec:
+  source: {}

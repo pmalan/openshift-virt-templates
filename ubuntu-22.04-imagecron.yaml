@@ -1,0 +1,26 @@
+apiVersion: cdi.kubevirt.io/v1beta1
+kind: DataImportCron
+metadata:
+  annotations:
+    cdi.kubevirt.io/storage.bind.immediate.requested: 'true'
+    cdi.kubevirt.io/storage.import.lastCronTime: '2023-10-27T00:13:02Z'
+    cdi.kubevirt.io/storage.import.sourceDesiredDigest: 'sha256:a7ec25824f71d00b03f35252ff5f85f5d17df96815ebf9168b89e77a555a364e'
+  resourceVersion: '7992338'
+  name: ubuntu-import-cron
+  namespace: kubevirt-os-images 
+spec:
+  garbageCollect: Outdated
+  importsToKeep: 3
+  managedDataSource: ubuntu
+  schedule: 15 9/12 * * *
+  template:
+    metadata: {}
+    spec:
+      source:
+        registry:
+          url: 'docker://quay.io/containerdisks/ubuntu:22.04'
+      storage:
+        resources:
+          requests:
+            storage: 30Gi
+    status: {}
