@@ -16,3 +16,5 @@ oc apply -f ubuntu-templates.yaml
 oc apply -f ubuntu-22.04-datasource.yaml
 oc apply -f ubuntu-22.04-imagecron.yaml
 ```
+
+![Virtual Machine Catalog with updated Ubuntu Templates](Screenshot-2023-10-30 14-31-43.png)
