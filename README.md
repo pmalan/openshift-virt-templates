@@ -1,12 +1,12 @@
 # openshift-virt-templates
 
-##How to add other OS templates to Openshift Virtualization 
+## How to add other OS templates to Openshift Virtualization 
 
 Download https://github.com/kubevirt/common-templates/releases/download/v0.25.0/common-templates.yaml (or relevant version, as specified in an existing Openshift Template, current 4.13 - v0.25.0)
 
 Modify templates, for this example, only Ubuntu was selected.
 
-Create DataSource and ImageCron to create the autmatic import of source.
+Create DataSource and ImageCron to create the automatic import of source.
 
 ## Ubuntu Sample
 
