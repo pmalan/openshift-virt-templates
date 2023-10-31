@@ -12,9 +12,9 @@ Create DataSource and ImageCron to create the automatic import of source.
 
 ```
 oc new-project kubevirt-os-images
-oc apply -f ubuntu-templates.yaml
-oc apply -f ubuntu-22.04-datasource.yaml
-oc apply -f ubuntu-22.04-imagecron.yaml
+oc apply -f ubuntu-templates.yaml -n  kubevirt-os-images
+oc apply -f ubuntu-22.04-datasource.yaml -n  kubevirt-os-images
+oc apply -f ubuntu-22.04-imagecron.yaml -n  kubevirt-os-images
 ```
 
 ![Virtual Machine Catalog with updated Ubuntu Templates](newcatalogentry.png)
