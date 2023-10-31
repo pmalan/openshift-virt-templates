@@ -11,7 +11,7 @@ Create DataSource and ImageCron to create the automatic import of source.
 ## Ubuntu Sample
 
 ```
-oc new project kubevirt-os-images
+oc new-project kubevirt-os-images
 oc apply -f ubuntu-templates.yaml
 oc apply -f ubuntu-22.04-datasource.yaml
 oc apply -f ubuntu-22.04-imagecron.yaml
